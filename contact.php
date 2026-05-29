@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-mb_language('Japanese');
+mb_language('uni');
 mb_internal_encoding('UTF-8');
 
 $name     = isset($_POST['name'])    ? htmlspecialchars(trim($_POST['name']),    ENT_QUOTES, 'UTF-8') : '';
@@ -21,7 +21,7 @@ if (empty($name) || empty($phone)) {
     exit;
 }
 
-// 送信先
+// 送信先・件名
 $to      = 'info@knhome.jp';
 $subject = '【不動産売却LP】お問い合わせが届きました';
 
@@ -39,14 +39,20 @@ $body .= "--------------------\n";
 $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
 $body .= "送信元URL：https://knhome.jp/fudosan-sell/\n";
 
-// ヘッダー
+// ヘッダー（UTF-8 base64エンコード）
+$encodedSubject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
+$encodedBody    = base64_encode($body);
+
 $headers  = "From: info@knhome.jp\r\n";
 if (!empty($email)) {
     $headers .= "Reply-To: {$email}\r\n";
 }
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$headers .= "Content-Transfer-Encoding: base64\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 
-$result = mb_send_mail($to, $subject, $body, $headers);
+$result = mail($to, $encodedSubject, $encodedBody, $headers);
 
 if ($result) {
     echo json_encode(['success' => true, 'message' => 'お問合せありがとうございました']);
