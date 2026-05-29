@@ -12,13 +12,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deploy via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          server: b1.coreserver.jp
-          port: 22
-          username: knhome
-          password: ${{ secrets.FTP_PASSWORD }}
-          remote_path: /virtual/knhome/public_html/knhome.jp/fudosan-sell/
-          local_path: ./*
-          sftp_only: true
+      - name: Deploy via FTPS
+        run: |
+          sudo apt-get install -y lftp
+          lftp -e "
+            set ssl:verify-certificate no;
+            set ftp:ssl-force true;
+            set ftp:ssl-protect-data true;
+            open -u knhome,${{ secrets.FTP_PASSWORD }} b1.coreserver.jp;
+            mirror -R --parallel=3 --exclude=^\.git/ --exclude=^\.github/ ./ /virtual/knhome/public_html/knhome.jp/fudosan-sell/;
+            quit
+          "
