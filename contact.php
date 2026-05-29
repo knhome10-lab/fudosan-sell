@@ -21,9 +21,8 @@ if (empty($name) || empty($phone)) {
     exit;
 }
 
-// 送信先・件名
-$to      = 'info@knhome.jp';
-$subject = '【不動産売却LP】お問い合わせが届きました';
+// 件名
+$subject = '売却LPよりのお問い合わせです';
 
 // メール本文
 $body  = "不動産売却LPよりお問い合わせがありました。\n\n";
@@ -39,20 +38,28 @@ $body .= "--------------------\n";
 $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
 $body .= "送信元URL：https://knhome.jp/fudosan-sell/\n";
 
-// ヘッダー（UTF-8 base64エンコード）
-$encodedSubject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
-$encodedBody    = base64_encode($body);
+// 差出人表示名（通信相手）：「KNホーム 不動産売却LP」
+$fromName    = mb_encode_mimeheader('KNホーム 不動産売却LP', 'UTF-8', 'B');
+$fromAddress = 'info@knhome.jp';
 
-$headers  = "From: info@knhome.jp\r\n";
+// ヘッダー
+$headers  = "From: {$fromName} <{$fromAddress}>\r\n";
 if (!empty($email)) {
-    $headers .= "Reply-To: {$email}\r\n";
+    $customerName = mb_encode_mimeheader($name, 'UTF-8', 'B');
+    $headers .= "Reply-To: {$customerName} <{$email}>\r\n";
 }
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "Content-Transfer-Encoding: base64\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 
-$result = mail($to, $encodedSubject, $encodedBody, $headers);
+// 件名エンコード
+$encodedSubject = mb_encode_mimeheader($subject, 'UTF-8', 'B');
+
+// 本文base64エンコード
+$encodedBody = chunk_split(base64_encode($body));
+
+$to = 'info@knhome.jp';
+$result = mail($to, $encodedSubject, $encodedBody, $headers, "-f{$fromAddress}");
 
 if ($result) {
     echo json_encode(['success' => true, 'message' => 'お問合せありがとうございました']);
