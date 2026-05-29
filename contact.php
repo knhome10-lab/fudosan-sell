@@ -48,6 +48,7 @@ $isFreemail  = in_array($emailDomain, $freemailDomains);
 
 // ヘッダー
 $headers  = "From: {$fromName} <{$fromAddress}>\r\n";
+$headers .= "X-LP-Form: fudosan-sell\r\n";
 if (!empty($email) && !$isFreemail) {
     $customerName = mb_encode_mimeheader($name, 'UTF-8', 'B');
     $headers .= "Reply-To: {$customerName} <{$email}>\r\n";
