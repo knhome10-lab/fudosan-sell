@@ -21,8 +21,8 @@ if (empty($name) || empty($phone)) {
     exit;
 }
 
-// 件名
-$subject = '売却LPよりのお問い合わせです';
+// 件名（お客様名を入れることで「通信相手」が一目でわかる）
+$subject = "売却LP お問い合わせ：{$name} 様";
 
 // メール本文
 $body  = "不動産売却LPよりお問い合わせがありました。\n\n";
@@ -36,7 +36,6 @@ $body .= "■ ご相談内容\n";
 $body .= (!empty($message) ? $message : '未入力') . "\n\n";
 $body .= "--------------------\n";
 $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
-$body .= "送信元URL：https://knhome.jp/fudosan-sell/\n";
 
 // 差出人表示名（通信相手）：「KNホーム 不動産売却LP」
 $fromName    = mb_encode_mimeheader('KNホーム 不動産売却LP', 'UTF-8', 'B');
