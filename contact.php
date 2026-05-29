@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-mb_language('uni');
+mb_language('Japanese');
 mb_internal_encoding('UTF-8');
 
 $name     = isset($_POST['name'])    ? htmlspecialchars(trim($_POST['name']),    ENT_QUOTES, 'UTF-8') : '';
@@ -21,11 +21,10 @@ if (empty($name) || empty($phone)) {
     exit;
 }
 
-// 件名（お客様名を入れることで「通信相手」が一目でわかる）
+$to      = 'info@knhome.jp';
 $subject = "不動産売却サイト お問い合わせ：{$name} 様";
 
-// メール本文
-$body  = "不動産売却LPよりお問い合わせがありました。\n\n";
+$body  = "不動産売却サイトよりお問い合わせがありました。\n\n";
 $body .= "■ お客様情報\n";
 $body .= "お名前　　　：{$name}\n";
 $body .= "電話番号　　：{$phone}\n";
@@ -37,34 +36,10 @@ $body .= (!empty($message) ? $message : '未入力') . "\n\n";
 $body .= "--------------------\n";
 $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
 
-// 差出人：サーバーアドレスを使用（knhomeフィルター回避）
-$fromName    = mb_encode_mimeheader('不動産売却 お問い合わせフォーム', 'UTF-8', 'B');
-$fromAddress = 'form@b1.coreserver.jp';
-
-// フリーメールドメイン（Reply-To に使うとスパム判定されるため除外）
-$freemailDomains = ['gmail.com', 'yahoo.co.jp', 'yahoo.com', 'hotmail.com', 'outlook.com', 'icloud.com'];
-$emailDomain = !empty($email) ? strtolower(substr(strrchr($email, '@'), 1)) : '';
-$isFreemail  = in_array($emailDomain, $freemailDomains);
-
-// ヘッダー
-$headers  = "From: {$fromName} <{$fromAddress}>\r\n";
+$headers  = "From: form@b1.coreserver.jp\r\n";
 $headers .= "X-LP-Form: fudosan-sell\r\n";
-if (!empty($email) && !$isFreemail) {
-    $customerName = mb_encode_mimeheader($name, 'UTF-8', 'B');
-    $headers .= "Reply-To: {$customerName} <{$email}>\r\n";
-}
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-$headers .= "Content-Transfer-Encoding: base64\r\n";
 
-// 件名エンコード
-$encodedSubject = mb_encode_mimeheader($subject, 'UTF-8', 'B');
-
-// 本文base64エンコード
-$encodedBody = chunk_split(base64_encode($body));
-
-$to = 'info@knhome.jp';
-$result = mail($to, $encodedSubject, $encodedBody, $headers, '-finfo@knhome.jp');
+$result = mb_send_mail($to, $subject, $body, $headers);
 
 if ($result) {
     echo json_encode(['success' => true, 'message' => 'お問合せありがとうございました']);
