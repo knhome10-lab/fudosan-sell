@@ -37,9 +37,9 @@ $body .= (!empty($message) ? $message : '未入力') . "\n\n";
 $body .= "--------------------\n";
 $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
 
-// 差出人表示名（通信相手）：「KNホーム 不動産売却LP」
-$fromName    = mb_encode_mimeheader('KNホーム 不動産売却LP', 'UTF-8', 'B');
-$fromAddress = 'info@knhome.jp';
+// 差出人：サーバーアドレスを使用（knhomeフィルター回避）
+$fromName    = mb_encode_mimeheader('不動産売却 お問い合わせフォーム', 'UTF-8', 'B');
+$fromAddress = 'form@b1.coreserver.jp';
 
 // フリーメールドメイン（Reply-To に使うとスパム判定されるため除外）
 $freemailDomains = ['gmail.com', 'yahoo.co.jp', 'yahoo.com', 'hotmail.com', 'outlook.com', 'icloud.com'];
@@ -64,7 +64,7 @@ $encodedSubject = mb_encode_mimeheader($subject, 'UTF-8', 'B');
 $encodedBody = chunk_split(base64_encode($body));
 
 $to = 'info@knhome.jp';
-$result = mail($to, $encodedSubject, $encodedBody, $headers, "-f{$fromAddress}");
+$result = mail($to, $encodedSubject, $encodedBody, $headers, '-finfo@knhome.jp');
 
 if ($result) {
     echo json_encode(['success' => true, 'message' => 'お問合せありがとうございました']);
