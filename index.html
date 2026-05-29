@@ -1827,24 +1827,24 @@
             ※ご入力いただいた個人情報は、査定・お問い合わせ対応の目的のみに使用します。第三者への提供・外部送信は行いません。
           </p>
           <p>24時間受付・通常24時間以内にご連絡します</p>
-          <form onsubmit="handleSubmit(event)">
+          <form id="contactForm" onsubmit="handleSubmit(event)">
             <div class="form-row">
               <div class="form-group">
                 <label>お名前<span class="req">必須</span></label>
-                <input type="text" placeholder="山田 太郎" required />
+                <input type="text" name="name" placeholder="山田 太郎" required />
               </div>
               <div class="form-group">
                 <label>電話番号<span class="req">必須</span></label>
-                <input type="tel" placeholder="090-0000-0000" required />
+                <input type="tel" name="phone" placeholder="090-0000-0000" required />
               </div>
             </div>
             <div class="form-group">
               <label>メールアドレス</label>
-              <input type="email" placeholder="example@email.com" />
+              <input type="email" name="email" placeholder="example@email.com" />
             </div>
             <div class="form-group">
               <label>物件の種類<span class="req">必須</span></label>
-              <select required>
+              <select name="type" required>
                 <option value="">選択してください</option>
                 <option>一戸建て</option>
                 <option>マンション・区分所有</option>
@@ -1857,13 +1857,13 @@
             </div>
             <div class="form-group">
               <label>物件の所在地（市区町村まで）<span class="req">必須</span></label>
-              <input type="text" placeholder="例：埼玉県加須市○○" required />
+              <input type="text" name="area" placeholder="例：埼玉県加須市○○" required />
             </div>
             <div class="form-group">
               <label>ご相談内容・お急ぎの理由など</label>
-              <textarea placeholder="例：相続した空き家で管理が難しく、なるべく早く売却したい。残置物が多いがそのままでよいか確認したい。など"></textarea>
+              <textarea name="message" placeholder="例：相続した空き家で管理が難しく、なるべく早く売却したい。残置物が多いがそのままでよいか確認したい。など"></textarea>
             </div>
-            <button type="submit" class="btn-submit">無料査定を依頼する →</button>
+            <button type="submit" class="btn-submit">ご相談はコチラ →</button>
           </form>
         </div>
       </div>
@@ -1943,19 +1943,37 @@
       });
     });
 
-    // フォーム送信（デモ）
+    // フォーム送信（PHP連携）
     function handleSubmit(e) {
       e.preventDefault();
-      const btn = e.target.querySelector('.btn-submit');
-      btn.textContent = 'お問合せありがとうございました';
-      btn.style.background = '#27ae60';
+      const form = e.target;
+      const btn = form.querySelector('.btn-submit');
+      btn.textContent = '送信中...';
       btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = '無料査定を依頼する →';
-        btn.style.background = '';
+
+      const formData = new FormData(form);
+
+      fetch('contact.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          btn.textContent = 'お問合せありがとうございました';
+          btn.style.background = '#27ae60';
+          form.reset();
+        } else {
+          btn.textContent = '送信失敗 - お電話でお問い合わせください';
+          btn.style.background = '#e74c3c';
+          btn.disabled = false;
+        }
+      })
+      .catch(() => {
+        btn.textContent = '送信失敗 - お電話でお問い合わせください';
+        btn.style.background = '#e74c3c';
         btn.disabled = false;
-        e.target.reset();
-      }, 4000);
+      });
     }
   </script>
 </body>
