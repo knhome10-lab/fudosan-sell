@@ -22,7 +22,7 @@ if (empty($name) || empty($phone)) {
 }
 
 // 件名（お客様名を入れることで「通信相手」が一目でわかる）
-$subject = "売却LP お問い合わせ：{$name} 様";
+$subject = "不動産売却サイト お問い合わせ：{$name} 様";
 
 // メール本文
 $body  = "不動産売却LPよりお問い合わせがありました。\n\n";
@@ -41,9 +41,14 @@ $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
 $fromName    = mb_encode_mimeheader('KNホーム 不動産売却LP', 'UTF-8', 'B');
 $fromAddress = 'info@knhome.jp';
 
+// フリーメールドメイン（Reply-To に使うとスパム判定されるため除外）
+$freemailDomains = ['gmail.com', 'yahoo.co.jp', 'yahoo.com', 'hotmail.com', 'outlook.com', 'icloud.com'];
+$emailDomain = !empty($email) ? strtolower(substr(strrchr($email, '@'), 1)) : '';
+$isFreemail  = in_array($emailDomain, $freemailDomains);
+
 // ヘッダー
 $headers  = "From: {$fromName} <{$fromAddress}>\r\n";
-if (!empty($email)) {
+if (!empty($email) && !$isFreemail) {
     $customerName = mb_encode_mimeheader($name, 'UTF-8', 'B');
     $headers .= "Reply-To: {$customerName} <{$email}>\r\n";
 }
