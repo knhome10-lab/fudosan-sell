@@ -22,7 +22,7 @@ if (empty($name) || empty($phone)) {
 }
 
 $to      = 'info@knhome.jp';
-$subject = "不動産売却サイト お問い合わせ：{$name} 様";
+$subject = "お問い合わせ：{$name} 様";
 
 $body  = "不動産売却サイトよりお問い合わせがありました。\n\n";
 $body .= "■ お客様情報\n";
