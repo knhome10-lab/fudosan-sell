@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://knhome.jp/fudosan-sell/sitemap.xml
+Sitemap: https://www.knhome.jp/fudosan-sell/sitemap.xml

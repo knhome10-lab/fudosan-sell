@@ -20,6 +20,6 @@ jobs:
             set ftp:ssl-force true;
             set ftp:ssl-protect-data true;
             open -u knhome,${{ secrets.FTP_PASSWORD }} b1.coreserver.jp;
-            mirror -R --parallel=3 --exclude=^\.git/ --exclude=^\.github/ ./ public_html/knhome.jp/fudosan-sell/;
+            mirror -R --parallel=3 --exclude=^\.git/ --exclude=^\.github/ ./ public_html/www.knhome.jp/fudosan-sell/;
             quit
           "
