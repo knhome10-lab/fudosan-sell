@@ -1247,6 +1247,47 @@
     .fade-in.visible { opacity: 1; transform: translateY(0); }
 
     /* ─────────────────────────────
+       TOPへボタン
+    ───────────────────────────── */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 1.5rem;
+      z-index: 300;
+      width: 48px;
+      height: 48px;
+      background: var(--navy-mid);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s, background 0.2s;
+      pointer-events: none;
+    }
+    .scroll-top-btn.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .scroll-top-btn:hover { background: var(--navy-light); }
+    .scroll-top-btn::before {
+      content: "▲";
+      font-size: 0.75rem;
+      line-height: 1;
+    }
+
+    /* ─────────────────────────────
        固定CTA（スマホ用）
     ───────────────────────────── */
     .fixed-cta {
@@ -1411,7 +1452,6 @@
         </div>
         <div class="hero-buttons">
           <a href="#contact" class="btn-gold">📋 無料で相談する</a>
-          <a href="tel:0800-919-5566" class="btn-outline">📞 電話で相談する</a>
         </div>
       </div>
       <div class="hero-card">
@@ -1960,6 +2000,9 @@
     </div>
   </footer>
 
+  <!-- TOPへボタン -->
+  <button class="scroll-top-btn" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="ページトップへ">TOP</button>
+
   <!-- スマホ固定CTA -->
   <div class="fixed-cta">
     <a href="tel:0800-919-5566" class="btn-call">📞 電話で相談</a>
@@ -1967,10 +2010,12 @@
   </div>
 
   <script>
-    // ナビ スクロール効果
+    // ナビ スクロール効果 & TOPへボタン
     const nav = document.getElementById('nav');
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 40);
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
     });
 
     // フェードイン
