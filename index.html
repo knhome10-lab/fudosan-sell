@@ -1839,8 +1839,8 @@
               </div>
             </div>
             <div class="form-group">
-              <label>メールアドレス</label>
-              <input type="email" name="email" placeholder="example@email.com" />
+              <label>メールアドレス<span class="req">必須</span></label>
+              <input type="email" name="email" placeholder="example@email.com" required />
             </div>
             <div class="form-group">
               <label>物件の種類<span class="req">必須</span></label>
@@ -1963,16 +1963,29 @@
           btn.textContent = 'お問合せありがとうございました';
           btn.style.background = '#27ae60';
           form.reset();
+          setTimeout(() => {
+            btn.textContent = 'ご相談はコチラ →';
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 10000);
         } else {
           btn.textContent = '送信失敗 - お電話でお問い合わせください';
           btn.style.background = '#e74c3c';
-          btn.disabled = false;
+          setTimeout(() => {
+            btn.textContent = 'ご相談はコチラ →';
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 10000);
         }
       })
       .catch(() => {
         btn.textContent = '送信失敗 - お電話でお問い合わせください';
         btn.style.background = '#e74c3c';
-        btn.disabled = false;
+        setTimeout(() => {
+          btn.textContent = 'ご相談はコチラ →';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 10000);
       });
     }
   </script>
