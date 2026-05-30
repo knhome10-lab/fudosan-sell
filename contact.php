@@ -36,18 +36,13 @@ $body .= (!empty($message) ? $message : '未入力') . "\n\n";
 $body .= "--------------------\n";
 $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
 
-// mail()関数で直接送信テスト
-$result = mail($to, '=?UTF-8?B?' . base64_encode($subject) . '?=', $body,
-    "From: info-mail@knhome.jp\r\n" .
-    "MIME-Version: 1.0\r\n" .
-    "Content-Type: text/plain; charset=UTF-8\r\n" .
-    "Content-Transfer-Encoding: 8bit\r\n"
-);
+$headers = "From: info-mail@knhome.jp\r\n";
+
+$result = mb_send_mail($to, $subject, $body, $headers);
 
 if ($result) {
     echo json_encode(['success' => true, 'message' => 'お問合せありがとうございました']);
 } else {
-    $error = error_get_last();
-    echo json_encode(['success' => false, 'message' => '送信に失敗しました。お電話（0800-919-5566）にてご連絡ください。', 'debug' => $error]);
+    echo json_encode(['success' => false, 'message' => '送信に失敗しました。お電話（0800-919-5566）にてご連絡ください。']);
 }
 ?>
