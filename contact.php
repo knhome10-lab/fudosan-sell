@@ -22,7 +22,7 @@ if (empty($name) || empty($phone)) {
 }
 
 $to      = 'info-mail@knhome.jp';
-$subject = "不動産売却サイト お問い合わせ：{$name} 様";
+$subject = "不動産売却 お問い合わせ：{$name} 様";
 
 $body  = "不動産売却サイトよりお問い合わせがありました。\n\n";
 $body .= "■ お客様情報\n";
@@ -36,14 +36,18 @@ $body .= (!empty($message) ? $message : '未入力') . "\n\n";
 $body .= "--------------------\n";
 $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
 
-$headers  = "From: form@b1.coreserver.jp\r\n";
-$headers .= "X-LP-Form: fudosan-sell\r\n";
-
-$result = mb_send_mail($to, $subject, $body, $headers);
+// mail()関数で直接送信テスト
+$result = mail($to, '=?UTF-8?B?' . base64_encode($subject) . '?=', $body,
+    "From: info-mail@knhome.jp\r\n" .
+    "MIME-Version: 1.0\r\n" .
+    "Content-Type: text/plain; charset=UTF-8\r\n" .
+    "Content-Transfer-Encoding: 8bit\r\n"
+);
 
 if ($result) {
     echo json_encode(['success' => true, 'message' => 'お問合せありがとうございました']);
 } else {
-    echo json_encode(['success' => false, 'message' => '送信に失敗しました。お電話（0800-919-5566）にてご連絡ください。']);
+    $error = error_get_last();
+    echo json_encode(['success' => false, 'message' => '送信に失敗しました。お電話（0800-919-5566）にてご連絡ください。', 'debug' => $error]);
 }
 ?>
