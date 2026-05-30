@@ -22,7 +22,7 @@ if (empty($name) || empty($phone)) {
 }
 
 $to      = 'info@knhome.jp';
-$subject = "お問い合わせ：{$name} 様";
+$subject = "不動産売却サイト お問い合わせ：{$name} 様";
 
 $body  = "不動産売却サイトよりお問い合わせがありました。\n\n";
 $body .= "■ お客様情報\n";
@@ -36,7 +36,7 @@ $body .= (!empty($message) ? $message : '未入力') . "\n\n";
 $body .= "--------------------\n";
 $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
 
-$headers  = "From: knhome@b1.coreserver.jp\r\n";
+$headers  = "From: form@b1.coreserver.jp\r\n";
 $headers .= "X-LP-Form: fudosan-sell\r\n";
 
 $result = mb_send_mail($to, $subject, $body, $headers);
