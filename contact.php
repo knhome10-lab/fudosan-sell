@@ -39,7 +39,7 @@ $body .= "送信日時：" . date('Y/m/d H:i:s') . "\n";
 $headers  = "From: form@b1.coreserver.jp\r\n";
 $headers .= "X-LP-Form: fudosan-sell\r\n";
 
-$result = mb_send_mail($to, $subject, $body, $headers, '-fknhome@b1.coreserver.jp');
+$result = mb_send_mail($to, $subject, $body, $headers);
 
 if ($result) {
     echo json_encode(['success' => true, 'message' => 'お問合せありがとうございました']);
