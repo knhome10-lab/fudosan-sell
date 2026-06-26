@@ -2072,6 +2072,10 @@
           btn.textContent = 'お問合せありがとうございました';
           btn.style.background = '#27ae60';
           form.reset();
+          gtag('event', 'form_submit_success', {
+            'event_category': 'contact',
+            'event_label': '不動産売却問い合わせ完了'
+          });
           setTimeout(() => {
             btn.textContent = 'ご相談はコチラ →';
             btn.style.background = '';
