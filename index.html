@@ -841,6 +841,38 @@
     ───────────────────────────── */
     .voices { background: var(--warm-white); padding: 6rem 2rem; }
 
+    .voices-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .voices-header-text { text-align: center; }
+    .voices-header-text .section-eyebrow,
+    .voices-header-text .section-title { margin-bottom: 0.25rem; }
+    .voices-header-illust {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      flex-shrink: 0;
+    }
+    .voices-illust-img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+    }
+    .voices-illust-comment {
+      background: var(--gold);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 0.25rem 0.8rem;
+      border-radius: 2rem;
+      white-space: nowrap;
+    }
+
     .voices-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1533,8 +1565,16 @@
   <!-- お客様の声 -->
   <section class="voices" id="voices">
     <div class="container">
-      <p class="section-eyebrow fade-in">Customer Voices</p>
-      <h2 class="section-title fade-in">ご利用いただいたお客様の声</h2>
+      <div class="voices-header fade-in">
+        <div class="voices-header-text">
+          <p class="section-eyebrow">Customer Voices</p>
+          <h2 class="section-title">ご利用いただいたお客様の声</h2>
+        </div>
+        <div class="voices-header-illust">
+          <img src="man-sparkle.png" alt="売却成功のイメージ" class="voices-illust-img">
+          <span class="voices-illust-comment">売却続々！</span>
+        </div>
+      </div>
       <div class="divider fade-in"></div>
 
       <div class="voices-grid">
