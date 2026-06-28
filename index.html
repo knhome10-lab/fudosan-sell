@@ -839,6 +839,91 @@
     /* ─────────────────────────────
        お客様の声
     ───────────────────────────── */
+    /* 売却事例
+    ───────────────────────────── */
+    .cases { background: var(--cream); padding: 6rem 2rem; }
+
+    .cases-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.75rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .case-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .case-num {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+      background: rgba(180,140,60,0.1);
+      padding: 0.2rem 0.7rem;
+      border-radius: 2rem;
+    }
+
+    .case-type {
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      font-weight: 600;
+    }
+
+    .case-body { display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .case-block {
+      background: var(--warm-white);
+      border-radius: 0.6rem;
+      padding: 0.9rem 1rem;
+    }
+
+    .case-block.case-result {
+      background: rgba(30,60,40,0.06);
+    }
+
+    .case-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.3rem;
+    }
+
+    .case-text {
+      font-size: 0.88rem;
+      color: var(--text-dark);
+      line-height: 1.65;
+    }
+
+    .case-arrow {
+      text-align: center;
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
+
+    .case-comment {
+      font-size: 0.82rem;
+      color: var(--text-mid);
+      border-top: 1px solid var(--border);
+      padding-top: 0.75rem;
+      font-style: italic;
+      line-height: 1.6;
+    }
+
     .voices { background: var(--warm-white); padding: 6rem 2rem; }
 
     .voices-header {
@@ -1649,6 +1734,74 @@
           <span class="feature-badge">AS-IS</span>
           <h3>現況のまま買取<br>片付け・清掃不要</h3>
           <p>残置物（家財道具・荷物）がそのままでも大丈夫。片付けや清掃の費用・手間をかけずに売却できます。相続登記が未了の物件も提携司法書士がサポートします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 売却事例 -->
+  <section class="cases" id="cases">
+    <div class="container">
+      <p class="section-eyebrow fade-in">Case Studies</p>
+      <h2 class="section-title fade-in">売却事例のご紹介</h2>
+      <div class="divider fade-in"></div>
+
+      <div class="cases-grid">
+        <div class="case-card fade-in">
+          <div class="case-header">
+            <span class="case-num">事例 01</span>
+            <span class="case-type">🏡 戸建て</span>
+          </div>
+          <div class="case-body">
+            <div class="case-block">
+              <p class="case-label">状況</p>
+              <p class="case-text">所有者が体調不良により急遽実家に戻ることに。庭の草木が伸びて荒れてしまい、玄関にたどり着けない状態でした。</p>
+            </div>
+            <div class="case-arrow">▼</div>
+            <div class="case-block case-result">
+              <p class="case-label">結果</p>
+              <p class="case-text">現況のまま査定・買取。その後、賃貸物件として再生しています。</p>
+            </div>
+          </div>
+          <p class="case-comment">💬 現況のままでの査定は可能です。</p>
+        </div>
+
+        <div class="case-card fade-in">
+          <div class="case-header">
+            <span class="case-num">事例 02</span>
+            <span class="case-type">🏡 戸建て</span>
+          </div>
+          <div class="case-body">
+            <div class="case-block">
+              <p class="case-label">状況</p>
+              <p class="case-text">ひとり身になったタイミングで生活をコンパクトにしたいとのご要望。</p>
+            </div>
+            <div class="case-arrow">▼</div>
+            <div class="case-block case-result">
+              <p class="case-label">結果</p>
+              <p class="case-text">弊社で買取し、引っ越し先の賃貸探しまでサポート。住み替えをワンストップで実現しました。</p>
+            </div>
+          </div>
+          <p class="case-comment">💬 賃貸も取り扱っています。住み替えまでご相談可能です。</p>
+        </div>
+
+        <div class="case-card fade-in">
+          <div class="case-header">
+            <span class="case-num">事例 03</span>
+            <span class="case-type">🌿 土地</span>
+          </div>
+          <div class="case-body">
+            <div class="case-block">
+              <p class="case-label">状況</p>
+              <p class="case-text">値上がりを期待して購入したが予想が外れ、他社に買取を断られ続けていた土地。</p>
+            </div>
+            <div class="case-arrow">▼</div>
+            <div class="case-block case-result">
+              <p class="case-label">結果</p>
+              <p class="case-text">弊社にて売却を担当。時間はかかりましたが無事売却完了しました。</p>
+            </div>
+          </div>
+          <p class="case-comment">💬 条件が難しくても最後までサポートいたします。</p>
         </div>
       </div>
     </div>
