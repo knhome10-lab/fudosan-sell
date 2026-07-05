@@ -1222,10 +1222,40 @@
       color: rgba(255,255,255,0.7);
     }
 
+    .form-badges {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .form-badge-item {
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: rgba(200,152,26,0.18);
+      border: 1px solid rgba(200,152,26,0.4);
+      color: var(--gold-light);
+      padding: 0.25rem 0.7rem;
+      border-radius: 2rem;
+    }
+
     .form-group label .req {
       color: #e74c3c;
       font-size: 0.65rem;
       margin-left: 0.3rem;
+    }
+
+    .form-group label .req-either {
+      color: var(--gold-light);
+      font-size: 0.65rem;
+      margin-left: 0.3rem;
+    }
+
+    .form-reassure {
+      text-align: center;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 0.75rem;
+      line-height: 1.6;
     }
 
     .form-group input,
@@ -2105,30 +2135,36 @@
 
         <!-- 右：フォーム -->
         <div class="cta-form-box fade-in">
-          <h3>お問い合わせフォーム</h3>
-          <p class="form-privacy" style="margin-bottom:0.5rem;">
-            ※ご入力いただいた個人情報は、査定・お問い合わせ対応の目的のみに使用します。第三者への提供・外部送信は行いません。
-          </p>
+          <div class="form-badges">
+            <span class="form-badge-item">⏱ 入力30秒</span>
+            <span class="form-badge-item">✅ 完全無料</span>
+            <span class="form-badge-item">🚫 売却強制なし</span>
+          </div>
+          <h3>無料相談フォーム</h3>
           <p>24時間受付・通常24時間以内にご連絡します</p>
           <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label>お名前<span class="req">必須</span></label>
+              <input type="text" name="name" placeholder="山田 太郎" required />
+            </div>
             <div class="form-row">
               <div class="form-group">
-                <label>お名前<span class="req">必須</span></label>
-                <input type="text" name="name" placeholder="山田 太郎" required />
-              </div>
-              <div class="form-group">
-                <label>電話番号</label>
+                <label>電話番号<span class="req-either">どちらか必須</span></label>
                 <input type="tel" name="phone" placeholder="090-0000-0000" />
               </div>
+              <div class="form-group">
+                <label>メールアドレス</label>
+                <input type="email" name="email" placeholder="example@email.com" />
+              </div>
             </div>
             <div class="form-group">
-              <label>メールアドレス<span class="req">必須</span></label>
-              <input type="email" name="email" placeholder="example@email.com" required />
+              <label>物件の所在地（市区町村まででもOK）<span class="req">必須</span></label>
+              <input type="text" name="area" placeholder="例：埼玉県春日部市○○" required />
             </div>
             <div class="form-group">
-              <label>物件の種類<span class="req">必須</span></label>
-              <select name="type" required>
-                <option value="">選択してください</option>
+              <label>物件の種類</label>
+              <select name="type">
+                <option value="">選択してください（任意）</option>
                 <option>一戸建て</option>
                 <option>マンション・区分所有</option>
                 <option>土地・更地</option>
@@ -2139,14 +2175,11 @@
               </select>
             </div>
             <div class="form-group">
-              <label>物件の所在地（市区町村まででもOK）<span class="req">必須</span></label>
-              <input type="text" name="area" placeholder="例：埼玉県加須市○○" required />
+              <label>ご相談内容（任意）</label>
+              <textarea name="message" placeholder="例：相続した空き家で管理が難しい。残置物があってもOKか確認したい。など、気軽にどうぞ。"></textarea>
             </div>
-            <div class="form-group">
-              <label>ご相談内容・お急ぎの理由など</label>
-              <textarea name="message" placeholder="例：相続した空き家で管理が難しく、なるべく早く売却したい。残置物が多いがそのままでよいか確認したい。など"></textarea>
-            </div>
-            <button type="submit" class="btn-submit">ご相談はコチラ →</button>
+            <button type="submit" class="btn-submit">無料で査定依頼する（しつこい営業なし）</button>
+            <p class="form-reassure">🔒 個人情報は査定・相談対応のみに使用。第三者提供なし。</p>
           </form>
         </div>
       </div>
