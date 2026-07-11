@@ -29,7 +29,7 @@
     "author": {"@type": "Organization", "name": "株式会社KNホーム", "url": "https://www.knhome.jp/fudosan-sell/"},
     "publisher": {"@type": "Organization", "name": "株式会社KNホーム", "logo": {"@type": "ImageObject", "url": "https://www.knhome.jp/fudosan-sell/logo.png"}},
     "datePublished": "2026-06-23",
-    "dateModified": "2026-06-23",
+    "dateModified": "2026-07-11",
     "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.knhome.jp/fudosan-sell/column/sozoku-toki-gimuuka.html"}
   }
   </script>
@@ -41,6 +41,55 @@
       {"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://www.knhome.jp/fudosan-sell/"},
       {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://www.knhome.jp/fudosan-sell/column/"},
       {"@type": "ListItem", "position": 3, "name": "相続登記義務化とは？"}
+    ]
+  }
+  </script>
+  <!-- FAQPage構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "相続登記をしないとどうなりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "相続を知った日から3年以内に相続登記を行わないと、10万円以下の過料（罰則）が科される場合があります。また、不動産の売却や担保設定ができない、放置するうちに次の相続が発生して権利関係がさらに複雑になるなどのリスクもあります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "相続登記の3年の期限はいつから数えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "「相続によって不動産を取得したことを知った日」から3年以内です。一般的には被相続人が亡くなった日が基準になりますが、後から相続を知った場合はその日が起算点となります。なお、2024年4月より前の相続については、2027年3月31日までが期限の経過措置が設けられています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "相続登記は自分でできますか？司法書士に頼んだ方がよいですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "法律上は自分で行うことも可能です。ただし、戸籍謄本の収集・遺産分割協議書の作成・法務局への申請など多くの手続きが必要で、手間と時間がかかります。相続人が多い・遺産分割が複雑・不動産の売却も同時に進めたいという場合は、司法書士への依頼が確実です。KNホームでは提携司法書士をご紹介できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "相続登記にかかる費用はいくらですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "登録免許税（固定資産税評価額×0.4%）と司法書士報酬（目安：5〜15万円程度）が主な費用です。たとえば固定資産税評価額が1,000万円の不動産なら登録免許税は4万円。司法書士報酬は案件の複雑さによって異なります。戸籍謄本などの実費（数千円〜1万円程度）も別途かかります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "相続登記が済んでいない不動産は売却できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "相続登記が完了していないと、法律上は売買契約を結べません。ただし、登記手続きと売却準備を並行して進めることは可能です。KNホームでは提携司法書士と連携し、相続登記から売却まで一括でサポートしています。「まだ登記が済んでいない」という段階でもご相談ください。"
+        }
+      }
     ]
   }
   </script>
@@ -97,6 +146,16 @@
     .related-list li a:hover { background: var(--border); }
     footer { background: #0d2018; color: rgba(255,255,255,0.6); padding: 2rem; text-align: center; font-size: 0.78rem; }
     footer a { color: var(--gold-light); text-decoration: none; }
+    .faq-item { border-left: 4px solid var(--gold); background: var(--gold-pale); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1rem 0; }
+    .faq-q { font-size: 1rem; color: var(--navy); margin-bottom: 0.5rem; }
+    .faq-item p:last-child { margin: 0; font-size: 0.9rem; }
+    .cost-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 1.25rem 0; }
+    .cost-table th { background: var(--navy); color: #fff; padding: 0.6rem 0.9rem; text-align: left; }
+    .cost-table td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    .cost-table tr:nth-child(even) td { background: var(--cream); }
+    .timeline-list { list-style: none; padding: 0; margin: 1.25rem 0; }
+    .timeline-list li { position: relative; padding: 0.6rem 0.75rem 0.6rem 2.5rem; margin-bottom: 0.5rem; background: var(--cream); border-radius: 0.5rem; font-size: 0.9rem; color: var(--text-mid); }
+    .timeline-list li::before { content: attr(data-step); position: absolute; left: 0.6rem; top: 0.55rem; background: var(--navy); color: #fff; width: 1.4rem; height: 1.4rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
     @media (max-width: 768px) {
       nav { padding: 0.75rem 1rem; }
       .breadcrumb { padding: 0.6rem 1rem; }
@@ -231,9 +290,119 @@
           <p>相続登記が未了でもご相談いただけます。提携司法書士との連携で、登記から売却までワンストップで対応。別々に依頼する手間・費用の節約につながります。</p>
         </div>
 
+        <h2>6. 相続人申告登記とは？（簡易手続き）</h2>
+
+        <p>2024年4月の義務化と同時に、<strong>「相続人申告登記」</strong>という簡易な手続きも新設されました。これは、正式な相続登記の前に「自分が相続人であること」を法務局に申し出るだけで、3年の義務を履行したとみなされる制度です。</p>
+
+        <h3>相続人申告登記のメリット・デメリット</h3>
+        <ul>
+          <li><strong>メリット：</strong>手続きが比較的シンプル。遺産分割協議が整っていなくても申請できる</li>
+          <li><strong>デメリット：</strong>これだけでは<strong>不動産の売却・担保設定はできない</strong>。正式な相続登記は別途必要</li>
+        </ul>
+
+        <div class="info-box">
+          <strong>📌 相続人申告登記は「つなぎ」の手続き</strong>
+          <p>相続人が多くて分割協議が長引きそうな場合や、急ぎで過料リスクだけ回避したい場合に有効です。売却を視野に入れている場合は、正式な相続登記まで完了させる必要があります。</p>
+        </div>
+
+        <h2>7. 相続登記にかかる費用の詳細</h2>
+
+        <p>相続登記の費用は大きく「登録免許税」と「司法書士報酬」に分かれます。</p>
+
+        <div style="overflow-x:auto;">
+          <table class="cost-table">
+            <thead>
+              <tr>
+                <th>費用の種類</th>
+                <th>金額の目安</th>
+                <th>備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>登録免許税</td>
+                <td>固定資産税評価額×0.4%</td>
+                <td>評価額1,000万円なら4万円</td>
+              </tr>
+              <tr>
+                <td>司法書士報酬</td>
+                <td>5〜15万円程度</td>
+                <td>不動産の数・相続人数で変動</td>
+              </tr>
+              <tr>
+                <td>戸籍謄本等の取得</td>
+                <td>数千円〜1万円程度</td>
+                <td>市区町村ごとに実費</td>
+              </tr>
+              <tr>
+                <td>住民票・評価証明書</td>
+                <td>数百円〜数千円</td>
+                <td>各自治体窓口で取得</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>相続人が複数いる・複数の不動産がある・遺産分割協議が複雑などの事情がある場合、司法書士報酬はそれ以上になることもあります。KNホームでは提携司法書士をご紹介しており、費用の見積もりも無料で確認できます。</p>
+
+        <h2>8. 春日部市で相続登記をする場合のポイント</h2>
+
+        <p>春日部市の不動産に関する相続登記の管轄は、<strong>さいたま地方法務局 越谷支局</strong>（越谷市）です。郵送または窓口での申請が可能で、オンライン申請にも対応しています。</p>
+
+        <h3>固定資産税評価証明書の取得先</h3>
+        <p>登録免許税の計算に必要な「固定資産税評価証明書」は、<strong>春日部市役所 資産税課</strong>で取得できます（手数料：1件300円程度）。遠方にお住まいの方は郵送での取得も可能です。</p>
+
+        <h3>相続登記後に売却を検討している方へ</h3>
+        <p>春日部市内の空き家・相続不動産の売却をお考えの場合、登記完了後にすぐ売却できるよう、KNホームでは登記手続きと並行して売却の準備を進めることができます。</p>
+
+        <div class="warn-box">
+          <strong>⚠ 2027年3月31日が経過措置の期限</strong>
+          <p>2024年4月より前の相続は、2027年3月31日までに登記が必要です。この期限まで手続きを先送りにせず、早めに動き始めることをおすすめします。</p>
+        </div>
+
+        <h2>9. 相続登記の手続きステップ（全体の流れ）</h2>
+
+        <p>相続登記を司法書士に依頼する場合の一般的な流れをご紹介します。</p>
+
+        <ul class="timeline-list">
+          <li data-step="1"><strong>相続の発生・財産調査</strong>：被相続人の不動産・預金・借金などを調査</li>
+          <li data-step="2"><strong>相続人の確定</strong>：被相続人の出生〜死亡の戸籍を収集し、相続人を特定</li>
+          <li data-step="3"><strong>遺産分割協議</strong>：誰がどの不動産を相続するか、相続人全員で協議・合意</li>
+          <li data-step="4"><strong>遺産分割協議書の作成</strong>：合意内容を書面化し、全員が署名・実印を押印</li>
+          <li data-step="5"><strong>法務局へ申請</strong>：必要書類を添えて登記申請（司法書士が代行）</li>
+          <li data-step="6"><strong>登記完了</strong>：通常1〜2週間程度で完了。完了後は売却・担保設定が可能に</li>
+        </ul>
+
+        <h2>よくある質問（FAQ）</h2>
+
+        <div class="faq-item">
+          <p class="faq-q"><strong>Q. 相続登記をしないとどうなりますか？</strong></p>
+          <p>相続を知った日から3年以内に登記を行わないと、10万円以下の過料（罰則）が科される場合があります。また、不動産の売却や担保設定ができない、次の相続で権利関係がさらに複雑になるリスクもあります。</p>
+        </div>
+
+        <div class="faq-item">
+          <p class="faq-q"><strong>Q. 相続登記の3年の期限はいつから数えますか？</strong></p>
+          <p>「相続によって不動産を取得したことを知った日」から3年以内です。一般的には被相続人が亡くなった日が基準になりますが、後から相続を知った場合はその日が起算点となります。なお、2024年4月より前の相続は2027年3月31日が期限の経過措置があります。</p>
+        </div>
+
+        <div class="faq-item">
+          <p class="faq-q"><strong>Q. 相続登記は自分でできますか？</strong></p>
+          <p>法律上は自分で申請することも可能です。ただし、戸籍謄本の収集・遺産分割協議書の作成・法務局への申請など多くの手続きが必要です。相続人が多い・不動産が複数あるなど複雑なケースでは、司法書士への依頼が確実です。</p>
+        </div>
+
+        <div class="faq-item">
+          <p class="faq-q"><strong>Q. 相続登記にかかる費用はいくらですか？</strong></p>
+          <p>主な費用は登録免許税（固定資産税評価額×0.4%）と司法書士報酬（5〜15万円程度）です。評価額が1,000万円なら登録免許税は4万円。司法書士報酬は案件の複雑さで変わります。</p>
+        </div>
+
+        <div class="faq-item">
+          <p class="faq-q"><strong>Q. 相続登記が済んでいない不動産は売却できますか？</strong></p>
+          <p>相続登記が完了していないと売買契約を結べません。ただし、登記手続きと売却準備を並行して進めることは可能です。KNホームでは提携司法書士と連携し、登記から売却まで一括でサポートしています。</p>
+        </div>
+
         <h2>まとめ</h2>
 
-        <p>相続登記の義務化により、相続した不動産を放置しておくことのリスクが高まっています。期限（相続を知った日から3年以内）を過ぎると過料の対象となるため、早めの対応が重要です。</p>
+        <p>相続登記の義務化により、相続した不動産を放置しておくことのリスクが高まっています。期限（相続を知った日から3年以内）を過ぎると過料の対象となるため、早めの対応が重要です。特に<strong>2024年4月より前の相続は2027年3月31日が経過措置の期限</strong>となっており、残り時間は多くありません。</p>
 
         <p>「何から始めればいいかわからない」という方は、まず不動産会社へのご相談から始めてみてください。KNホームでは司法書士と連携し、相続登記から売却までまとめてサポートします。</p>
 
