@@ -16,7 +16,7 @@ $type     = isset($_POST['type'])    ? htmlspecialchars(trim($_POST['type']),   
 $area     = isset($_POST['area'])    ? htmlspecialchars(trim($_POST['area']),    ENT_QUOTES, 'UTF-8') : '';
 $message  = isset($_POST['message']) ? htmlspecialchars(trim($_POST['message']), ENT_QUOTES, 'UTF-8') : '';
 
-if (empty($name) || empty($email)) {
+if (empty($name) || (empty($phone) && empty($email))) {
     echo json_encode(['success' => false, 'message' => '必須項目を入力してください']);
     exit;
 }
