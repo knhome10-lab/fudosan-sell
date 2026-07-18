@@ -1133,6 +1133,17 @@
 
     .faq-item.open .faq-toggle::after { transform: scaleY(0); }
 
+    /* 宅建業免許情報クリック時の点滅ハイライト */
+    @keyframes licenseBlink {
+      0%, 100% { background: transparent; }
+      50% { background: rgba(200,152,26,0.55); }
+    }
+    #license-row.blink td {
+      animation: licenseBlink 1s ease-in-out 5;
+      color: #fff !important;
+      font-weight: 700;
+    }
+
     .faq-a {
       max-height: 0;
       overflow: hidden;
@@ -2350,7 +2361,7 @@
           <tr><td style="color:rgba(255,255,255,0.4); padding-right:0.75rem; white-space:nowrap; vertical-align:top;">メール</td><td style="color:rgba(255,255,255,0.65);">info@knhome.jp</td></tr>
           <tr><td style="color:rgba(255,255,255,0.4); padding-right:0.75rem; white-space:nowrap; vertical-align:top;">営業時間</td><td style="color:rgba(255,255,255,0.65);">10:00〜18:00（定休日：火・水）</td></tr>
           <tr><td style="color:rgba(255,255,255,0.4); padding-right:0.75rem; white-space:nowrap; vertical-align:top;">事業内容</td><td style="color:rgba(255,255,255,0.65);">不動産売買・仲介、建築コンサルティング</td></tr>
-          <tr><td style="color:rgba(255,255,255,0.4); padding-right:0.75rem; white-space:nowrap; vertical-align:top;">免許</td><td style="color:rgba(255,255,255,0.65);">埼玉県知事（5）第20171号</td></tr>
+          <tr id="license-row"><td style="color:rgba(255,255,255,0.4); padding-right:0.75rem; white-space:nowrap; vertical-align:top;">免許</td><td style="color:rgba(255,255,255,0.65);">埼玉県知事（5）第20171号</td></tr>
           <tr><td style="color:rgba(255,255,255,0.4); padding-right:0.75rem; white-space:nowrap; vertical-align:top;">加盟団体</td><td style="color:rgba(255,255,255,0.65);">（公社）全国宅地建物取引業保証協会会員<br>（公社）埼玉県宅地建物取引協会会員<br>（公社）首都圏不動産公正取引協議会加盟</td></tr>
         </table>
       </div>
@@ -2483,6 +2494,19 @@
         }, 10000);
       });
     }
+  </script>
+  <script>
+    // 「宅建業免許情報」クリックで免許行を5秒間点滅させる
+    document.querySelectorAll('a[href="#company-info"]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        var row = document.getElementById('license-row');
+        if (!row) return;
+        row.classList.remove('blink');
+        void row.offsetWidth; // アニメーション再始動用
+        row.classList.add('blink');
+        setTimeout(function () { row.classList.remove('blink'); }, 5200);
+      });
+    });
   </script>
 </body>
 </html>
