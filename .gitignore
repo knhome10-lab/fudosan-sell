@@ -1,0 +1,10 @@
+# 認証情報・トークン（絶対にコミットしない）
+client_secret.json
+token.json
+
+# SEOレポート生成物（ローカル運用ファイル）
+seo_latest.json
+seo_report_*.html
+
+# Claude作業用ディレクトリ
+.claude/
