@@ -49,8 +49,14 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.knhome.jp/fudosan-sell/column/fudousan-seisaku-2026.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.knhome.jp/fudosan-sell/column/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
