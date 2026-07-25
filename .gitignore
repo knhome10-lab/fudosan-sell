@@ -6,5 +6,9 @@ token.json
 seo_latest.json
 seo_report_*.html
 
+# 日次自動チェック等の運用ログ（コード管理不要）
+cvr_review_log.txt
+meo_post_log.txt
+
 # Claude作業用ディレクトリ
 .claude/
