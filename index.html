@@ -2070,23 +2070,36 @@
           margin: 0 0 14px;
         }
         .kn-table {
-          width: 100%;
-          border-collapse: collapse;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: stretch;
+          gap: 0;
           font-size: 15px;
+        }
+        .kn-col {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 0 20px;
+          border-left: 1px solid var(--border);
+        }
+        .kn-col:first-child {
+          border-left: none;
+          padding-left: 0;
         }
         .kn-type {
           color: var(--text-mid);
           font-weight: 600;
           white-space: nowrap;
-          width: 100px;
-          padding: 5px 0;
+          margin-bottom: 6px;
         }
         .kn-total {
           color: var(--navy);
           font-weight: 700;
-          text-align: right;
-          padding-right: 16px;
           white-space: nowrap;
+          margin-bottom: 4px;
         }
         .kn-unit {
           color: var(--text-light);
@@ -2097,6 +2110,10 @@
           color: var(--text-light);
           font-size: 13px;
           padding: 8px 0;
+        }
+        @media (max-width: 480px) {
+          .kn-table { flex-wrap: wrap; }
+          .kn-col { padding: 8px 14px; }
         }
       </style>
 

@@ -22,26 +22,26 @@
     var city = el.getAttribute('data-city') || '';
     var cityData = DATA[city];
 
-    var rows = '';
+    var cols = '';
     if (cityData) {
       TYPES.forEach(function(t) {
         var d = cityData[t.key];
         if (!d) return;
-        rows += '<tr>' +
-          '<td class="kn-type">' + t.icon + '&nbsp;' + t.key + '</td>' +
-          '<td class="kn-total">&#165;' + fmt(d.avg_total) + '万</td>' +
-          '<td class="kn-unit">&#165;' + d.avg_sqm.toFixed(1) + '万/' + d.avg_area + '&#13217;</td>' +
-          '</tr>';
+        cols += '<div class="kn-col">' +
+          '<div class="kn-type">' + t.icon + '&nbsp;' + t.key + '</div>' +
+          '<div class="kn-total">&#165;' + fmt(d.avg_total) + '万</div>' +
+          '<div class="kn-unit">&#165;' + d.avg_sqm.toFixed(1) + '万/' + d.avg_area + '&#13217;</div>' +
+          '</div>';
       });
     } else {
-      rows = '<tr><td colspan="3" class="kn-nodata">データなし</td></tr>';
+      cols = '<div class="kn-nodata">データなし</div>';
     }
 
     el.innerHTML =
       '<div class="kn-market-wrap">' +
         '<p class="kn-title">' + city + 'の売却相場</p>' +
         '<p class="kn-source">' + DATA_DATE + '　|　出典：国土交通省 不動産情報ライブラリ</p>' +
-        '<table class="kn-table">' + rows + '</table>' +
+        '<div class="kn-table">' + cols + '</div>' +
       '</div>';
   }
 
