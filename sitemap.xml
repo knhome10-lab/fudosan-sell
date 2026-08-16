@@ -73,8 +73,14 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.knhome.jp/fudosan-sell/column/saitama-shinchiku-kakaku-2026.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.knhome.jp/fudosan-sell/column/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
