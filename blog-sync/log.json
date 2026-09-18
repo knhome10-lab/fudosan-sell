@@ -4,9 +4,9 @@
   "last_checked_at": "2026-09-18",
   "last_known_published_date": "2026-09-14",
   "articles": [
-    {"post_id": 13650, "date": "2026-07-03", "title": "木造建材の進化で変わる間取り", "status": "skipped", "kn_home_file": null},
-    {"post_id": 13653, "date": "2026-07-06", "title": "現役世代が地方移住？！不動産高騰や競争疲れで大都市脱出！", "status": "skipped", "kn_home_file": null},
-    {"post_id": 13657, "date": "2026-07-10", "title": "地震に強い家とは", "status": "skipped", "kn_home_file": null},
+    {"post_id": 13650, "date": "2026-07-03", "title": "木造建材の進化で変わる間取り", "status": "published", "kn_home_file": "mokuzou-zaishitsu-madori-jiyuudo.html"},
+    {"post_id": 13653, "date": "2026-07-06", "title": "現役世代が地方移住？！不動産高騰や競争疲れで大都市脱出！", "status": "published", "kn_home_file": "chihou-ijuu-jitaku-baikyaku.html"},
+    {"post_id": 13657, "date": "2026-07-10", "title": "地震に強い家とは", "status": "published", "kn_home_file": "taishin-seino-baikyaku-setsumei.html"},
     {"post_id": 13660, "date": "2026-07-13", "title": "メンテナンス費用高騰により、家の修繕の優先順位を決める！", "status": "published", "kn_home_file": "shuzen-hiyou-koutou-yuusen-junni.html"},
     {"post_id": 13663, "date": "2026-07-17", "title": "3Dプリンター住宅", "status": "published", "kn_home_file": "3d-printer-jyutaku-shisan-kachi.html"},
     {"post_id": 13667, "date": "2026-07-21", "title": "【第1回】2026年 不動産法改正の全体像と「売り時」を見極める視点", "status": "published", "kn_home_file": "fudousan-houkaisei-2026-mikiwame.html"},
