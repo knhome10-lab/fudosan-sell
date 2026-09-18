@@ -205,8 +205,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.knhome.jp/fudosan-sell/column/mokuzou-zaishitsu-madori-jiyuudo.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.knhome.jp/fudosan-sell/column/chihou-ijuu-jitaku-baikyaku.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.knhome.jp/fudosan-sell/column/taishin-seino-baikyaku-setsumei.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.knhome.jp/fudosan-sell/column/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
