@@ -1,0 +1,31 @@
+{
+  "source_blog": "https://smile.re-agent.info/blog/",
+  "description": "戸建てリノベINFO(smile.re-agent.info)の記事とKNホームコラムの対応ログ。post_idが既知のものはチェック時にスキップされる。",
+  "last_checked_at": "2026-09-18",
+  "last_known_published_date": "2026-09-14",
+  "articles": [
+    {"post_id": 13650, "date": "2026-07-03", "title": "木造建材の進化で変わる間取り", "status": "skipped", "kn_home_file": null},
+    {"post_id": 13653, "date": "2026-07-06", "title": "現役世代が地方移住？！不動産高騰や競争疲れで大都市脱出！", "status": "skipped", "kn_home_file": null},
+    {"post_id": 13657, "date": "2026-07-10", "title": "地震に強い家とは", "status": "skipped", "kn_home_file": null},
+    {"post_id": 13660, "date": "2026-07-13", "title": "メンテナンス費用高騰により、家の修繕の優先順位を決める！", "status": "published", "kn_home_file": "shuzen-hiyou-koutou-yuusen-junni.html"},
+    {"post_id": 13663, "date": "2026-07-17", "title": "3Dプリンター住宅", "status": "published", "kn_home_file": "3d-printer-jyutaku-shisan-kachi.html"},
+    {"post_id": 13667, "date": "2026-07-21", "title": "【第1回】2026年 不動産法改正の全体像と「売り時」を見極める視点", "status": "published", "kn_home_file": "fudousan-houkaisei-2026-mikiwame.html"},
+    {"post_id": 13670, "date": "2026-07-24", "title": "ガスコンロからIHに変えるには", "status": "published", "kn_home_file": "akiya-setsubi-koushin-ih-uridoki.html"},
+    {"post_id": 13674, "date": "2026-07-27", "title": "【第2回】住所等変更登記の義務化・売却で失敗しないための実務ポイントと対策", "status": "published", "kn_home_file": "jusho-henko-toki-gimuka-baikyaku.html"},
+    {"post_id": 13686, "date": "2026-07-31", "title": "室内の暑さ対策", "status": "published", "kn_home_file": "natsu-akiya-kanri-atsusa-taisaku.html"},
+    {"post_id": 13680, "date": "2026-08-03", "title": "【第3回】省エネ基準強化で変わる不動産価値｜「売れる物件」と「売れない物件」の決定的な差", "status": "published", "kn_home_file": "shouene-kijun-kyouka-baikyaku-kachi.html"},
+    {"post_id": 13683, "date": "2026-08-07", "title": "リフォームを検討する際は、防犯対策も一緒に考える", "status": "published", "kn_home_file": "reform-bohan-taisaku-akiya-uridoki.html"},
+    {"post_id": 13690, "date": "2026-08-17", "title": "【第4回】住宅ローン減税と税制改正を活かす｜「手残り最大化」と買い替え成功の資金戦略", "status": "published", "kn_home_file": "jutaku-roan-genzei-tezan-saidaika.html"},
+    {"post_id": 13677, "date": "2026-08-21", "title": "マンションのリフォームはどこまでできる？", "status": "published", "kn_home_file": "mansion-reform-hani-baikyaku-junbi.html"},
+    {"post_id": 13693, "date": "2026-08-24", "title": "フラット35、ついに3%超え 〜金利上昇時代に不動産購入を急ぐべき理由〜", "status": "published", "kn_home_file": "flat35-3percent-urikyaku-eikyou.html"},
+    {"post_id": 13698, "date": "2026-08-28", "title": "「メンパ」という新しい価値観", "status": "published", "kn_home_file": "menpa-kukan-akiya-katsuyou.html"},
+    {"post_id": 13701, "date": "2026-08-31", "title": "インフレ時のタワマン購入！修繕の備えに不安？！", "status": "published", "kn_home_file": "tawamansion-shuzen-futan-baikyaku.html"},
+    {"post_id": 13707, "date": "2026-09-04", "title": "住宅ローンの資金計画の立て方", "status": "published", "kn_home_file": "sumikae-shikin-keikaku.html"},
+    {"post_id": 13717, "date": "2026-09-05", "title": "木造の中高層建築", "status": "published", "kn_home_file": "mokuzou-chukousou-shisan-kachi.html"},
+    {"post_id": 13720, "date": "2026-09-05", "title": "購入前に知っておきたい、インフレ時の不動産購入術！（投資編）", "status": "published", "kn_home_file": "chikufuru-toushika-jyuyou.html"},
+    {"post_id": 13723, "date": "2026-09-05", "title": "住まい探しの時期", "status": "published", "kn_home_file": "uridoki-hanbai-jiki.html"},
+    {"post_id": 13704, "date": "2026-09-07", "title": "インフレ時の住宅ローンは固定に借り換える？！", "status": "published", "kn_home_file": "henkan-koteikinri-uridoki.html"},
+    {"post_id": 13714, "date": "2026-09-11", "title": "内見で見るべきチェックポイント", "status": "published", "kn_home_file": "uchimi-check-baikyaku-junbi.html"},
+    {"post_id": 13711, "date": "2026-09-14", "title": "日銀の利上げに注目する！住宅ローンを組む前に金利上昇への備えを！", "status": "published", "kn_home_file": "kinri-joushou-baikyaku-eikyou.html"}
+  ]
+}
