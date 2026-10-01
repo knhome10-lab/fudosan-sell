@@ -1,8 +1,8 @@
 {
   "source_blog": "https://smile.re-agent.info/blog/",
   "description": "戸建てリノベINFO(smile.re-agent.info)の記事とKNホームコラムの対応ログ。post_idが既知のものはチェック時にスキップされる。",
-  "last_checked_at": "2026-09-27",
-  "last_known_published_date": "2026-09-14",
+  "last_checked_at": "2026-10-01",
+  "last_known_published_date": "2026-09-28",
   "articles": [
     {"post_id": 13513, "date": "2026-02-20", "title": "離婚に伴う不動産売却の実務", "status": "published", "kn_home_file": "rikon-baikyaku-oobaroon-nini-baikyaku.html"},
     {"post_id": 13516, "date": "2026-02-24", "title": "天井のデザインについて", "status": "published", "kn_home_file": "tenjou-shurui-naiken-shashin-inshou.html"},
@@ -56,6 +56,9 @@
     {"post_id": 13723, "date": "2026-09-05", "title": "住まい探しの時期", "status": "published", "kn_home_file": "uridoki-hanbai-jiki.html"},
     {"post_id": 13704, "date": "2026-09-07", "title": "インフレ時の住宅ローンは固定に借り換える？！", "status": "published", "kn_home_file": "henkan-koteikinri-uridoki.html"},
     {"post_id": 13714, "date": "2026-09-11", "title": "内見で見るべきチェックポイント", "status": "published", "kn_home_file": "uchimi-check-baikyaku-junbi.html"},
-    {"post_id": 13711, "date": "2026-09-14", "title": "日銀の利上げに注目する！住宅ローンを組む前に金利上昇への備えを！", "status": "published", "kn_home_file": "kinri-joushou-baikyaku-eikyou.html"}
+    {"post_id": 13711, "date": "2026-09-14", "title": "日銀の利上げに注目する！住宅ローンを組む前に金利上昇への備えを！", "status": "published", "kn_home_file": "kinri-joushou-baikyaku-eikyou.html"},
+    {"post_id": 13728, "date": "2026-09-28", "title": "「遺言代用信託」とは？ 家族に葬儀代・生活費をすぐ渡すための仕組み", "status": "published", "kn_home_file": "igon-daiyo-shintaku-sozoku-fudousan.html"},
+    {"post_id": 13731, "date": "2026-09-28", "title": "床上浸水は火災保険で補償される？水災補償の対象と注意点", "status": "published", "kn_home_file": "suigai-kaizoku-baikyaku-kokuchigimu.html"},
+    {"post_id": 13734, "date": "2026-09-28", "title": "20代でマイホーム購入が急増中？ そのウラに潜むお金のリスクについて", "status": "published", "kn_home_file": "20dai-pairloan-choukiloan-baikyaku-shijou.html"}
   ]
 }
