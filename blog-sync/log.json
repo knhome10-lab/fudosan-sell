@@ -1,64 +1,421 @@
 {
   "source_blog": "https://smile.re-agent.info/blog/",
   "description": "戸建てリノベINFO(smile.re-agent.info)の記事とKNホームコラムの対応ログ。post_idが既知のものはチェック時にスキップされる。",
-  "last_checked_at": "2026-10-05",
-  "last_known_published_date": "2026-09-28",
+  "last_checked_at": "2026-10-08",
+  "last_known_published_date": "2026-10-05",
   "articles": [
-    {"post_id": 13513, "date": "2026-02-20", "title": "離婚に伴う不動産売却の実務", "status": "published", "kn_home_file": "rikon-baikyaku-oobaroon-nini-baikyaku.html"},
-    {"post_id": 13516, "date": "2026-02-24", "title": "天井のデザインについて", "status": "published", "kn_home_file": "tenjou-shurui-naiken-shashin-inshou.html"},
-    {"post_id": 13522, "date": "2026-02-27", "title": "2026年の不動産市場展望", "status": "published", "kn_home_file": "fudousan-2026-tasouka-eria-tenbou.html"},
-    {"post_id": 13525, "date": "2026-03-02", "title": "中古戸建てが選ばれる理由", "status": "published", "kn_home_file": "chukojutaku-miryoku-baikyaku-appeal.html"},
-    {"post_id": 13528, "date": "2026-03-06", "title": "2026年度税制改正と住宅ローン減税", "status": "published", "kn_home_file": "2026zeisei-chuko-jutaku-loan-genzei.html"},
-    {"post_id": 13531, "date": "2026-03-09", "title": "空き家の耐震・防災リスク", "status": "published", "kn_home_file": "akiya-jishin-taisaku-baikyaku-kentou.html"},
-    {"post_id": 13536, "date": "2026-03-13", "title": "大相続時代の到来", "status": "published", "kn_home_file": "daisouzoku-jidai-seizen-baikyaku.html"},
-    {"post_id": 13540, "date": "2026-03-16", "title": "50年住宅ローンの普及", "status": "published", "kn_home_file": "50nen-jutaku-loan-kaite-shijou.html"},
-    {"post_id": 13544, "date": "2026-03-20", "title": "マンション購入前に知っておくべき管理組合の賠償責任について", "status": "published", "kn_home_file": "mansion-kanrikumiai-baisho-sekinin-saikosai.html"},
-    {"post_id": 13549, "date": "2026-03-23", "title": "築20〜25年の中古戸建てが狙い目な理由", "status": "published", "kn_home_file": "chukoju-neraime-chikunen-baikyaku.html"},
-    {"post_id": 13553, "date": "2026-04-29", "title": "マンション管理費・修繕積立金の値上げ問題が深刻化", "status": "published", "kn_home_file": "shuzenkin-neagari-tekisei-baikyaku.html"},
-    {"post_id": 13556, "date": "2026-05-02", "title": "子育て世代の住宅選び", "status": "published", "kn_home_file": "kosodate-sedai-appeal-baikyaku.html"},
-    {"post_id": 13560, "date": "2026-05-05", "title": "事故物件とは？孤独死は告知義務があるのか？!", "status": "published", "kn_home_file": "jikobukken-kodokushi-kokuchigimu.html"},
-    {"post_id": 13563, "date": "2026-05-08", "title": "住宅ローン 固定金利と変動金利、どっちがお得？", "status": "published", "kn_home_file": "kinri-taipu-kaite-kounyuuryoku-baikyaku.html"},
-    {"post_id": 13567, "date": "2026-05-11", "title": "不動産購入前に知っておきたい、夫婦間のお金の話【2026年最新版】", "status": "published", "kn_home_file": "fuufu-kyouyuu-meigi-baikyaku-zeimu.html"},
-    {"post_id": 13570, "date": "2026-05-14", "title": "中古マンション購入", "status": "published", "kn_home_file": "chukomansion-kanri-taishin-shuzen-3ten.html"},
-    {"post_id": 13574, "date": "2026-05-17", "title": "後悔しないための「AI情報武装」３つの新常識", "status": "published", "kn_home_file": "ai-souba-haaku-baikyaku-senryaku.html"},
-    {"post_id": 13577, "date": "2026-05-20", "title": "不動産購入前に知っておきたい、分譲マンション関連法改正で変わる管理運営の実態と注意点", "status": "published", "kn_home_file": "mansion-kanri-ketsugi-kaisei.html"},
-    {"post_id": 13581, "date": "2026-05-23", "title": "古民家購入の注意点", "status": "published", "kn_home_file": "kominka-akiya-baikyaku-check.html"},
-    {"post_id": 13585, "date": "2026-05-26", "title": "これからは自動的に新住所に変更", "status": "published", "kn_home_file": "sumaato-touki-jusho-kanri.html"},
-    {"post_id": 13612, "date": "2026-05-29", "title": "中古戸建てを購入して建て替える場合の注意点", "status": "published", "kn_home_file": "saikenchiku-kahi-baikyaku-check.html"},
-    {"post_id": 13619, "date": "2026-06-01", "title": "日常に潜む建築の言葉", "status": "published", "kn_home_file": "kenchiku-yurai-kotoba-jiyutaku.html"},
-    {"post_id": 13622, "date": "2026-06-05", "title": "現代の相続で直面する新たな課題？！「デジタル資産」！", "status": "published", "kn_home_file": "sozoku-digital-shisan-uridoki.html"},
-    {"post_id": 13625, "date": "2026-06-08", "title": "ペロブスカイト太陽電池", "status": "published", "kn_home_file": "perovskite-taiyoden-jyutaku-shisankachi.html"},
-    {"post_id": 13628, "date": "2026-06-12", "title": "ユニットバスの大きさについて", "status": "published", "kn_home_file": "unit-bath-size-baikyaku-reform.html"},
-    {"post_id": 13632, "date": "2026-06-15", "title": "都心マンションで急増する「定期借家契約」—加速する家賃値上げの背景と対策", "status": "published", "kn_home_file": "teiki-shakuya-chintai-shusen-baikyaku.html"},
-    {"post_id": 13637, "date": "2026-06-19", "title": "マイホームがほしい時に必要な知識", "status": "published", "kn_home_file": "kaite-shiten-baikyaku-junbi.html"},
-    {"post_id": 13640, "date": "2026-06-22", "title": "10人に1人が相続税の課税対象 過少申告疑いで税務調査！", "status": "published", "kn_home_file": "sozokuzei-kazei-taisho-baikyaku-mieruka.html"},
-    {"post_id": 13643, "date": "2026-06-26", "title": "住まい探しは戸建てかマンションか", "status": "published", "kn_home_file": "kodate-mansion-uriyasusa-hikaku.html"},
-    {"post_id": 13647, "date": "2026-06-29", "title": "築古マンションの「出口」準備？！法改正でリノベや敷地売却も選択肢に！", "status": "published", "kn_home_file": "chikufuru-mansion-deguchi-senryaku-baikyaku.html"},
-    {"post_id": 13650, "date": "2026-07-03", "title": "木造建材の進化で変わる間取り", "status": "published", "kn_home_file": "mokuzou-zaishitsu-madori-jiyuudo.html"},
-    {"post_id": 13653, "date": "2026-07-06", "title": "現役世代が地方移住？！不動産高騰や競争疲れで大都市脱出！", "status": "published", "kn_home_file": "chihou-ijuu-jitaku-baikyaku.html"},
-    {"post_id": 13657, "date": "2026-07-10", "title": "地震に強い家とは", "status": "published", "kn_home_file": "taishin-seino-baikyaku-setsumei.html"},
-    {"post_id": 13660, "date": "2026-07-13", "title": "メンテナンス費用高騰により、家の修繕の優先順位を決める！", "status": "published", "kn_home_file": "shuzen-hiyou-koutou-yuusen-junni.html"},
-    {"post_id": 13663, "date": "2026-07-17", "title": "3Dプリンター住宅", "status": "published", "kn_home_file": "3d-printer-jyutaku-shisan-kachi.html"},
-    {"post_id": 13667, "date": "2026-07-21", "title": "【第1回】2026年 不動産法改正の全体像と「売り時」を見極める視点", "status": "published", "kn_home_file": "fudousan-houkaisei-2026-mikiwame.html"},
-    {"post_id": 13670, "date": "2026-07-24", "title": "ガスコンロからIHに変えるには", "status": "published", "kn_home_file": "akiya-setsubi-koushin-ih-uridoki.html"},
-    {"post_id": 13674, "date": "2026-07-27", "title": "【第2回】住所等変更登記の義務化・売却で失敗しないための実務ポイントと対策", "status": "published", "kn_home_file": "jusho-henko-toki-gimuka-baikyaku.html"},
-    {"post_id": 13686, "date": "2026-07-31", "title": "室内の暑さ対策", "status": "published", "kn_home_file": "natsu-akiya-kanri-atsusa-taisaku.html"},
-    {"post_id": 13680, "date": "2026-08-03", "title": "【第3回】省エネ基準強化で変わる不動産価値｜「売れる物件」と「売れない物件」の決定的な差", "status": "published", "kn_home_file": "shouene-kijun-kyouka-baikyaku-kachi.html"},
-    {"post_id": 13683, "date": "2026-08-07", "title": "リフォームを検討する際は、防犯対策も一緒に考える", "status": "published", "kn_home_file": "reform-bohan-taisaku-akiya-uridoki.html"},
-    {"post_id": 13690, "date": "2026-08-17", "title": "【第4回】住宅ローン減税と税制改正を活かす｜「手残り最大化」と買い替え成功の資金戦略", "status": "published", "kn_home_file": "jutaku-roan-genzei-tezan-saidaika.html"},
-    {"post_id": 13677, "date": "2026-08-21", "title": "マンションのリフォームはどこまでできる？", "status": "published", "kn_home_file": "mansion-reform-hani-baikyaku-junbi.html"},
-    {"post_id": 13693, "date": "2026-08-24", "title": "フラット35、ついに3%超え 〜金利上昇時代に不動産購入を急ぐべき理由〜", "status": "published", "kn_home_file": "flat35-3percent-urikyaku-eikyou.html"},
-    {"post_id": 13698, "date": "2026-08-28", "title": "「メンパ」という新しい価値観", "status": "published", "kn_home_file": "menpa-kukan-akiya-katsuyou.html"},
-    {"post_id": 13701, "date": "2026-08-31", "title": "インフレ時のタワマン購入！修繕の備えに不安？！", "status": "published", "kn_home_file": "tawamansion-shuzen-futan-baikyaku.html"},
-    {"post_id": 13707, "date": "2026-09-04", "title": "住宅ローンの資金計画の立て方", "status": "published", "kn_home_file": "sumikae-shikin-keikaku.html"},
-    {"post_id": 13717, "date": "2026-09-05", "title": "木造の中高層建築", "status": "published", "kn_home_file": "mokuzou-chukousou-shisan-kachi.html"},
-    {"post_id": 13720, "date": "2026-09-05", "title": "購入前に知っておきたい、インフレ時の不動産購入術！（投資編）", "status": "published", "kn_home_file": "chikufuru-toushika-jyuyou.html"},
-    {"post_id": 13723, "date": "2026-09-05", "title": "住まい探しの時期", "status": "published", "kn_home_file": "uridoki-hanbai-jiki.html"},
-    {"post_id": 13704, "date": "2026-09-07", "title": "インフレ時の住宅ローンは固定に借り換える？！", "status": "published", "kn_home_file": "henkan-koteikinri-uridoki.html"},
-    {"post_id": 13714, "date": "2026-09-11", "title": "内見で見るべきチェックポイント", "status": "published", "kn_home_file": "uchimi-check-baikyaku-junbi.html"},
-    {"post_id": 13711, "date": "2026-09-14", "title": "日銀の利上げに注目する！住宅ローンを組む前に金利上昇への備えを！", "status": "published", "kn_home_file": "kinri-joushou-baikyaku-eikyou.html"},
-    {"post_id": 13728, "date": "2026-09-28", "title": "「遺言代用信託」とは？ 家族に葬儀代・生活費をすぐ渡すための仕組み", "status": "published", "kn_home_file": "igon-daiyo-shintaku-sozoku-fudousan.html"},
-    {"post_id": 13731, "date": "2026-09-28", "title": "床上浸水は火災保険で補償される？水災補償の対象と注意点", "status": "published", "kn_home_file": "suigai-kaizoku-baikyaku-kokuchigimu.html"},
-    {"post_id": 13734, "date": "2026-09-28", "title": "20代でマイホーム購入が急増中？ そのウラに潜むお金のリスクについて", "status": "published", "kn_home_file": "20dai-pairloan-choukiloan-baikyaku-shijou.html"}
+    {
+      "post_id": 13513,
+      "date": "2026-02-20",
+      "title": "離婚に伴う不動産売却の実務",
+      "status": "published",
+      "kn_home_file": "rikon-baikyaku-oobaroon-nini-baikyaku.html"
+    },
+    {
+      "post_id": 13516,
+      "date": "2026-02-24",
+      "title": "天井のデザインについて",
+      "status": "published",
+      "kn_home_file": "tenjou-shurui-naiken-shashin-inshou.html"
+    },
+    {
+      "post_id": 13522,
+      "date": "2026-02-27",
+      "title": "2026年の不動産市場展望",
+      "status": "published",
+      "kn_home_file": "fudousan-2026-tasouka-eria-tenbou.html"
+    },
+    {
+      "post_id": 13525,
+      "date": "2026-03-02",
+      "title": "中古戸建てが選ばれる理由",
+      "status": "published",
+      "kn_home_file": "chukojutaku-miryoku-baikyaku-appeal.html"
+    },
+    {
+      "post_id": 13528,
+      "date": "2026-03-06",
+      "title": "2026年度税制改正と住宅ローン減税",
+      "status": "published",
+      "kn_home_file": "2026zeisei-chuko-jutaku-loan-genzei.html"
+    },
+    {
+      "post_id": 13531,
+      "date": "2026-03-09",
+      "title": "空き家の耐震・防災リスク",
+      "status": "published",
+      "kn_home_file": "akiya-jishin-taisaku-baikyaku-kentou.html"
+    },
+    {
+      "post_id": 13536,
+      "date": "2026-03-13",
+      "title": "大相続時代の到来",
+      "status": "published",
+      "kn_home_file": "daisouzoku-jidai-seizen-baikyaku.html"
+    },
+    {
+      "post_id": 13540,
+      "date": "2026-03-16",
+      "title": "50年住宅ローンの普及",
+      "status": "published",
+      "kn_home_file": "50nen-jutaku-loan-kaite-shijou.html"
+    },
+    {
+      "post_id": 13544,
+      "date": "2026-03-20",
+      "title": "マンション購入前に知っておくべき管理組合の賠償責任について",
+      "status": "published",
+      "kn_home_file": "mansion-kanrikumiai-baisho-sekinin-saikosai.html"
+    },
+    {
+      "post_id": 13549,
+      "date": "2026-03-23",
+      "title": "築20〜25年の中古戸建てが狙い目な理由",
+      "status": "published",
+      "kn_home_file": "chukoju-neraime-chikunen-baikyaku.html"
+    },
+    {
+      "post_id": 13553,
+      "date": "2026-04-29",
+      "title": "マンション管理費・修繕積立金の値上げ問題が深刻化",
+      "status": "published",
+      "kn_home_file": "shuzenkin-neagari-tekisei-baikyaku.html"
+    },
+    {
+      "post_id": 13556,
+      "date": "2026-05-02",
+      "title": "子育て世代の住宅選び",
+      "status": "published",
+      "kn_home_file": "kosodate-sedai-appeal-baikyaku.html"
+    },
+    {
+      "post_id": 13560,
+      "date": "2026-05-05",
+      "title": "事故物件とは？孤独死は告知義務があるのか？!",
+      "status": "published",
+      "kn_home_file": "jikobukken-kodokushi-kokuchigimu.html"
+    },
+    {
+      "post_id": 13563,
+      "date": "2026-05-08",
+      "title": "住宅ローン 固定金利と変動金利、どっちがお得？",
+      "status": "published",
+      "kn_home_file": "kinri-taipu-kaite-kounyuuryoku-baikyaku.html"
+    },
+    {
+      "post_id": 13567,
+      "date": "2026-05-11",
+      "title": "不動産購入前に知っておきたい、夫婦間のお金の話【2026年最新版】",
+      "status": "published",
+      "kn_home_file": "fuufu-kyouyuu-meigi-baikyaku-zeimu.html"
+    },
+    {
+      "post_id": 13570,
+      "date": "2026-05-14",
+      "title": "中古マンション購入",
+      "status": "published",
+      "kn_home_file": "chukomansion-kanri-taishin-shuzen-3ten.html"
+    },
+    {
+      "post_id": 13574,
+      "date": "2026-05-17",
+      "title": "後悔しないための「AI情報武装」３つの新常識",
+      "status": "published",
+      "kn_home_file": "ai-souba-haaku-baikyaku-senryaku.html"
+    },
+    {
+      "post_id": 13577,
+      "date": "2026-05-20",
+      "title": "不動産購入前に知っておきたい、分譲マンション関連法改正で変わる管理運営の実態と注意点",
+      "status": "published",
+      "kn_home_file": "mansion-kanri-ketsugi-kaisei.html"
+    },
+    {
+      "post_id": 13581,
+      "date": "2026-05-23",
+      "title": "古民家購入の注意点",
+      "status": "published",
+      "kn_home_file": "kominka-akiya-baikyaku-check.html"
+    },
+    {
+      "post_id": 13585,
+      "date": "2026-05-26",
+      "title": "これからは自動的に新住所に変更",
+      "status": "published",
+      "kn_home_file": "sumaato-touki-jusho-kanri.html"
+    },
+    {
+      "post_id": 13612,
+      "date": "2026-05-29",
+      "title": "中古戸建てを購入して建て替える場合の注意点",
+      "status": "published",
+      "kn_home_file": "saikenchiku-kahi-baikyaku-check.html"
+    },
+    {
+      "post_id": 13619,
+      "date": "2026-06-01",
+      "title": "日常に潜む建築の言葉",
+      "status": "published",
+      "kn_home_file": "kenchiku-yurai-kotoba-jiyutaku.html"
+    },
+    {
+      "post_id": 13622,
+      "date": "2026-06-05",
+      "title": "現代の相続で直面する新たな課題？！「デジタル資産」！",
+      "status": "published",
+      "kn_home_file": "sozoku-digital-shisan-uridoki.html"
+    },
+    {
+      "post_id": 13625,
+      "date": "2026-06-08",
+      "title": "ペロブスカイト太陽電池",
+      "status": "published",
+      "kn_home_file": "perovskite-taiyoden-jyutaku-shisankachi.html"
+    },
+    {
+      "post_id": 13628,
+      "date": "2026-06-12",
+      "title": "ユニットバスの大きさについて",
+      "status": "published",
+      "kn_home_file": "unit-bath-size-baikyaku-reform.html"
+    },
+    {
+      "post_id": 13632,
+      "date": "2026-06-15",
+      "title": "都心マンションで急増する「定期借家契約」—加速する家賃値上げの背景と対策",
+      "status": "published",
+      "kn_home_file": "teiki-shakuya-chintai-shusen-baikyaku.html"
+    },
+    {
+      "post_id": 13637,
+      "date": "2026-06-19",
+      "title": "マイホームがほしい時に必要な知識",
+      "status": "published",
+      "kn_home_file": "kaite-shiten-baikyaku-junbi.html"
+    },
+    {
+      "post_id": 13640,
+      "date": "2026-06-22",
+      "title": "10人に1人が相続税の課税対象 過少申告疑いで税務調査！",
+      "status": "published",
+      "kn_home_file": "sozokuzei-kazei-taisho-baikyaku-mieruka.html"
+    },
+    {
+      "post_id": 13643,
+      "date": "2026-06-26",
+      "title": "住まい探しは戸建てかマンションか",
+      "status": "published",
+      "kn_home_file": "kodate-mansion-uriyasusa-hikaku.html"
+    },
+    {
+      "post_id": 13647,
+      "date": "2026-06-29",
+      "title": "築古マンションの「出口」準備？！法改正でリノベや敷地売却も選択肢に！",
+      "status": "published",
+      "kn_home_file": "chikufuru-mansion-deguchi-senryaku-baikyaku.html"
+    },
+    {
+      "post_id": 13650,
+      "date": "2026-07-03",
+      "title": "木造建材の進化で変わる間取り",
+      "status": "published",
+      "kn_home_file": "mokuzou-zaishitsu-madori-jiyuudo.html"
+    },
+    {
+      "post_id": 13653,
+      "date": "2026-07-06",
+      "title": "現役世代が地方移住？！不動産高騰や競争疲れで大都市脱出！",
+      "status": "published",
+      "kn_home_file": "chihou-ijuu-jitaku-baikyaku.html"
+    },
+    {
+      "post_id": 13657,
+      "date": "2026-07-10",
+      "title": "地震に強い家とは",
+      "status": "published",
+      "kn_home_file": "taishin-seino-baikyaku-setsumei.html"
+    },
+    {
+      "post_id": 13660,
+      "date": "2026-07-13",
+      "title": "メンテナンス費用高騰により、家の修繕の優先順位を決める！",
+      "status": "published",
+      "kn_home_file": "shuzen-hiyou-koutou-yuusen-junni.html"
+    },
+    {
+      "post_id": 13663,
+      "date": "2026-07-17",
+      "title": "3Dプリンター住宅",
+      "status": "published",
+      "kn_home_file": "3d-printer-jyutaku-shisan-kachi.html"
+    },
+    {
+      "post_id": 13667,
+      "date": "2026-07-21",
+      "title": "【第1回】2026年 不動産法改正の全体像と「売り時」を見極める視点",
+      "status": "published",
+      "kn_home_file": "fudousan-houkaisei-2026-mikiwame.html"
+    },
+    {
+      "post_id": 13670,
+      "date": "2026-07-24",
+      "title": "ガスコンロからIHに変えるには",
+      "status": "published",
+      "kn_home_file": "akiya-setsubi-koushin-ih-uridoki.html"
+    },
+    {
+      "post_id": 13674,
+      "date": "2026-07-27",
+      "title": "【第2回】住所等変更登記の義務化・売却で失敗しないための実務ポイントと対策",
+      "status": "published",
+      "kn_home_file": "jusho-henko-toki-gimuka-baikyaku.html"
+    },
+    {
+      "post_id": 13686,
+      "date": "2026-07-31",
+      "title": "室内の暑さ対策",
+      "status": "published",
+      "kn_home_file": "natsu-akiya-kanri-atsusa-taisaku.html"
+    },
+    {
+      "post_id": 13680,
+      "date": "2026-08-03",
+      "title": "【第3回】省エネ基準強化で変わる不動産価値｜「売れる物件」と「売れない物件」の決定的な差",
+      "status": "published",
+      "kn_home_file": "shouene-kijun-kyouka-baikyaku-kachi.html"
+    },
+    {
+      "post_id": 13683,
+      "date": "2026-08-07",
+      "title": "リフォームを検討する際は、防犯対策も一緒に考える",
+      "status": "published",
+      "kn_home_file": "reform-bohan-taisaku-akiya-uridoki.html"
+    },
+    {
+      "post_id": 13690,
+      "date": "2026-08-17",
+      "title": "【第4回】住宅ローン減税と税制改正を活かす｜「手残り最大化」と買い替え成功の資金戦略",
+      "status": "published",
+      "kn_home_file": "jutaku-roan-genzei-tezan-saidaika.html"
+    },
+    {
+      "post_id": 13677,
+      "date": "2026-08-21",
+      "title": "マンションのリフォームはどこまでできる？",
+      "status": "published",
+      "kn_home_file": "mansion-reform-hani-baikyaku-junbi.html"
+    },
+    {
+      "post_id": 13693,
+      "date": "2026-08-24",
+      "title": "フラット35、ついに3%超え 〜金利上昇時代に不動産購入を急ぐべき理由〜",
+      "status": "published",
+      "kn_home_file": "flat35-3percent-urikyaku-eikyou.html"
+    },
+    {
+      "post_id": 13698,
+      "date": "2026-08-28",
+      "title": "「メンパ」という新しい価値観",
+      "status": "published",
+      "kn_home_file": "menpa-kukan-akiya-katsuyou.html"
+    },
+    {
+      "post_id": 13701,
+      "date": "2026-08-31",
+      "title": "インフレ時のタワマン購入！修繕の備えに不安？！",
+      "status": "published",
+      "kn_home_file": "tawamansion-shuzen-futan-baikyaku.html"
+    },
+    {
+      "post_id": 13707,
+      "date": "2026-09-04",
+      "title": "住宅ローンの資金計画の立て方",
+      "status": "published",
+      "kn_home_file": "sumikae-shikin-keikaku.html"
+    },
+    {
+      "post_id": 13717,
+      "date": "2026-09-05",
+      "title": "木造の中高層建築",
+      "status": "published",
+      "kn_home_file": "mokuzou-chukousou-shisan-kachi.html"
+    },
+    {
+      "post_id": 13720,
+      "date": "2026-09-05",
+      "title": "購入前に知っておきたい、インフレ時の不動産購入術！（投資編）",
+      "status": "published",
+      "kn_home_file": "chikufuru-toushika-jyuyou.html"
+    },
+    {
+      "post_id": 13723,
+      "date": "2026-09-05",
+      "title": "住まい探しの時期",
+      "status": "published",
+      "kn_home_file": "uridoki-hanbai-jiki.html"
+    },
+    {
+      "post_id": 13704,
+      "date": "2026-09-07",
+      "title": "インフレ時の住宅ローンは固定に借り換える？！",
+      "status": "published",
+      "kn_home_file": "henkan-koteikinri-uridoki.html"
+    },
+    {
+      "post_id": 13714,
+      "date": "2026-09-11",
+      "title": "内見で見るべきチェックポイント",
+      "status": "published",
+      "kn_home_file": "uchimi-check-baikyaku-junbi.html"
+    },
+    {
+      "post_id": 13711,
+      "date": "2026-09-14",
+      "title": "日銀の利上げに注目する！住宅ローンを組む前に金利上昇への備えを！",
+      "status": "published",
+      "kn_home_file": "kinri-joushou-baikyaku-eikyou.html"
+    },
+    {
+      "post_id": 13728,
+      "date": "2026-09-28",
+      "title": "「遺言代用信託」とは？ 家族に葬儀代・生活費をすぐ渡すための仕組み",
+      "status": "published",
+      "kn_home_file": "igon-daiyo-shintaku-sozoku-fudousan.html"
+    },
+    {
+      "post_id": 13731,
+      "date": "2026-09-28",
+      "title": "床上浸水は火災保険で補償される？水災補償の対象と注意点",
+      "status": "published",
+      "kn_home_file": "suigai-kaizoku-baikyaku-kokuchigimu.html"
+    },
+    {
+      "post_id": 13734,
+      "date": "2026-09-28",
+      "title": "20代でマイホーム購入が急増中？ そのウラに潜むお金のリスクについて",
+      "status": "published",
+      "kn_home_file": "20dai-pairloan-choukiloan-baikyaku-shijou.html"
+    },
+    {
+      "post_id": 13737,
+      "date": "2026-10-05",
+      "title": "自分に合った住宅ローンとは？",
+      "status": "published",
+      "kn_home_file": "column/jibun-ni-atta-jutaku-loan-kaite-baikyaku.html"
+    },
+    {
+      "post_id": 13740,
+      "date": "2026-10-05",
+      "title": "「家の広さ」に国の基準がなくなった？！ これからの住まい選びで知っておきたいこと",
+      "status": "published",
+      "kn_home_file": "column/juuseikatsu-kihon-keikaku-hirosa-kijun-baikyaku.html"
+    },
+    {
+      "post_id": 13743,
+      "date": "2026-10-05",
+      "title": "住まい探し、なぜ迷子になるのか？",
+      "status": "published",
+      "kn_home_file": "column/sumai-sagashi-mayoi-baikyaku-erabareru-kotsu.html"
+    }
   ]
 }
