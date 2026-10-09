@@ -1,7 +1,7 @@
 {
   "source_blog": "https://smile.re-agent.info/blog/",
   "description": "戸建てリノベINFO(smile.re-agent.info)の記事とKNホームコラムの対応ログ。post_idが既知のものはチェック時にスキップされる。",
-  "last_checked_at": "2026-10-08",
+  "last_checked_at": "2026-10-09",
   "last_known_published_date": "2026-10-05",
   "articles": [
     {
