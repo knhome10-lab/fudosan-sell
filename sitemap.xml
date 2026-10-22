@@ -445,8 +445,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.knhome.jp/fudosan-sell/column/kaite-henzai-hiritsu-30percent-baikyaku-kakaku.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.knhome.jp/fudosan-sell/column/kasai-hoken-sagi-baikyaku-mae-shuuri-chuui.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.knhome.jp/fudosan-sell/column/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

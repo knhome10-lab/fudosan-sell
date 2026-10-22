@@ -1,8 +1,8 @@
 {
   "source_blog": "https://smile.re-agent.info/blog/",
   "description": "戸建てリノベINFO(smile.re-agent.info)の記事とKNホームコラムの対応ログ。post_idが既知のものはチェック時にスキップされる。",
-  "last_checked_at": "2026-10-16",
-  "last_known_published_date": "2026-10-05",
+  "last_checked_at": "2026-10-22",
+  "last_known_published_date": "2026-10-19",
   "articles": [
     {
       "post_id": 13513,
@@ -416,6 +416,20 @@
       "title": "住まい探し、なぜ迷子になるのか？",
       "status": "published",
       "kn_home_file": "column/sumai-sagashi-mayoi-baikyaku-erabareru-kotsu.html"
+    },
+    {
+      "post_id": 13747,
+      "date": "2026-10-19",
+      "title": "住宅ローンはいくらまで借りていいの？！ 「手取りの30%以内」を目安に考える",
+      "status": "published",
+      "kn_home_file": "column/kaite-henzai-hiritsu-30percent-baikyaku-kakaku.html"
+    },
+    {
+      "post_id": 13750,
+      "date": "2026-10-19",
+      "title": "「無料で修理できる」に要注意！火災保険詐欺の恐ろしい実態",
+      "status": "published",
+      "kn_home_file": "column/kasai-hoken-sagi-baikyaku-mae-shuuri-chuui.html"
     }
   ]
 }
