@@ -457,8 +457,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.knhome.jp/fudosan-sell/column/chuko-mansion-ochiana-5-baikyaku-junbi-shiryo.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.knhome.jp/fudosan-sell/column/tochi-tatemono-shisan-kachi-baikyaku-satei.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.knhome.jp/fudosan-sell/column/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

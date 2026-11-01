@@ -1,8 +1,8 @@
 {
   "source_blog": "https://smile.re-agent.info/blog/",
   "description": "戸建てリノベINFO(smile.re-agent.info)の記事とKNホームコラムの対応ログ。post_idが既知のものはチェック時にスキップされる。",
-  "last_checked_at": "2026-10-30",
-  "last_known_published_date": "2026-10-19",
+  "last_checked_at": "2026-11-01",
+  "last_known_published_date": "2026-10-31",
   "articles": [
     {
       "post_id": 13513,
@@ -430,6 +430,28 @@
       "title": "「無料で修理できる」に要注意！火災保険詐欺の恐ろしい実態",
       "status": "published",
       "kn_home_file": "column/kasai-hoken-sagi-baikyaku-mae-shuuri-chuui.html"
+    },
+    {
+      "post_id": 13755,
+      "date": "2026-10-31",
+      "title": "住宅ローンはいくらまで借りていいの？！ 「手取りの30%以内」を目安に考える",
+      "status": "skipped",
+      "kn_home_file": null,
+      "note": "13747と同一タイトル・同一本文の再公開（カテゴリ追加のみ）。13747はkaite-henzai-hiritsu-30percent-baikyaku-kakaku.htmlとしてコラム化済みのためスキップ"
+    },
+    {
+      "post_id": 13759,
+      "date": "2026-10-31",
+      "title": "10年後も後悔しないための中古マンション”落とし穴”チェックリスト5選",
+      "status": "published",
+      "kn_home_file": "column/chuko-mansion-ochiana-5-baikyaku-junbi-shiryo.html"
+    },
+    {
+      "post_id": 13763,
+      "date": "2026-10-31",
+      "title": "マイホーム購入における土地と建物の資産価値の違いとは？「最適なバランス」の考え方",
+      "status": "published",
+      "kn_home_file": "column/tochi-tatemono-shisan-kachi-baikyaku-satei.html"
     }
   ]
 }
