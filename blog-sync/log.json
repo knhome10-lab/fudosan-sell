@@ -1,8 +1,8 @@
 {
   "source_blog": "https://smile.re-agent.info/blog/",
   "description": "戸建てリノベINFO(smile.re-agent.info)の記事とKNホームコラムの対応ログ。post_idが既知のものはチェック時にスキップされる。",
-  "last_checked_at": "2026-11-09",
-  "last_known_published_date": "2026-10-31",
+  "last_checked_at": "2026-11-12",
+  "last_known_published_date": "2026-11-12",
   "articles": [
     {
       "post_id": 13513,
@@ -452,6 +452,21 @@
       "title": "マイホーム購入における土地と建物の資産価値の違いとは？「最適なバランス」の考え方",
       "status": "published",
       "kn_home_file": "column/tochi-tatemono-shisan-kachi-baikyaku-satei.html"
+    },
+    {
+      "post_id": 13770,
+      "date": "2026-11-09",
+      "title": "地目とは？住宅を建てられる土地・建てられない土地の違い",
+      "status": "published",
+      "kn_home_file": "column/chimoku-baikyaku-mae-kakunin-nouchi-sanrin.html"
+    },
+    {
+      "post_id": 13774,
+      "date": "2026-11-12",
+      "title": "【第1回】不動産購入時に気をつけて欲しいこと4選：資金計画は「物件価格」だけで考えない",
+      "status": "published",
+      "kn_home_file": "column/baikyaku-shikin-keikaku-shohiyou-tedori.html"
     }
-  ]
+  ],
+  "check_note_2026-11-12": "11/06・11/09のチェックはweb_fetchが空応答を返していたのに「新着なし」と記録していた(誤り)。11/12にブラウザで確認し、13770(11/09公開)・13774(11/12公開)を検知。以後、月アーカイブや?m=が空応答のときは「新着なし」と判断せずブラウザで再確認すること"
 }
